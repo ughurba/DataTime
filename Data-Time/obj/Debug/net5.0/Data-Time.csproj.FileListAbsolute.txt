@@ -1,0 +1,16 @@
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\bin\Debug\net5.0\Data-Time.exe
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\bin\Debug\net5.0\Data-Time.deps.json
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\bin\Debug\net5.0\Data-Time.runtimeconfig.json
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\bin\Debug\net5.0\Data-Time.runtimeconfig.dev.json
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\bin\Debug\net5.0\Data-Time.dll
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\bin\Debug\net5.0\Data-Time.pdb
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.csproj.AssemblyReference.cache
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.AssemblyInfoInputs.cache
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.AssemblyInfo.cs
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.csproj.CoreCompileInputs.cache
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.dll
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\refint\Data-Time.dll
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.pdb
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\Data-Time.genruntimeconfig.cache
+C:\Users\Clean__Laptop\Desktop\Data-Time\Data-Time\obj\Debug\net5.0\ref\Data-Time.dll
