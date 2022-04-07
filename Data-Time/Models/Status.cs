@@ -22,12 +22,15 @@ namespace Data_Time
             Title = title;
             Content = content;
             SharedData = DateTime.Now;
+           
 
         }
 
         public DateTime GetStatusInfo()
         {
-            Console.WriteLine($"Id{Id}\nTitle:{Title}\nContent:{Content}\nshared {timer} seconds ago");
+            Console.WriteLine();
+            Console.WriteLine($"Id{Id}\nTitle:{Title}\nContent:{Content}");
+            Console.WriteLine("shared {0:hh\\:mm\\:ss} seconds ago",timer); // milisecoundu yox edib sadece saat minut ve second saxlamiwam yeni format etmiwem
             return SharedData;
         }
 

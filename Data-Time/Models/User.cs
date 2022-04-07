@@ -34,8 +34,8 @@ namespace Data_Time
                 {
 
                     Console.WriteLine();
-                    Console.WriteLine($"UserName:{Username}\nId{item.Id}\nTitle:{item.Title}\nContent:{item.Content}\nshared {item.timer} seconds ago");
-                    Console.WriteLine();
+                    Console.WriteLine($"UserName:{Username}\nId{item.Id}\nTitle:{item.Title}\nContent:{item.Content}");
+                    Console.WriteLine("shared {0:hh\\:mm\\:ss} seconds ago", item.timer);
                     return item.Id;
                 }
             }
@@ -52,7 +52,8 @@ namespace Data_Time
             {
                 Console.WriteLine();
 
-                Console.WriteLine($"UserName:{Username}\nId{item.Id}\nTitle:{item.Title}\nContent:{item.Content}\nshared ({item.timer}) seconds ago");
+                Console.WriteLine($"UserName:{Username}\nId{item.Id}\nTitle:{item.Title}\nContent:{item.Content}");
+                Console.WriteLine("shared {0:hh\\:mm\\:ss} seconds ago", item.timer);
             }
             return Statuses;
         }
