@@ -12,7 +12,7 @@ namespace Data_Time
         public string Content { get; set; }
         public DateTime SharedData { get; set; }
         public int Second { get; set; }
-        public TimeSpan timer => DateTime.Now - SharedData; //shardata elave olan kimi timer iwdemeye bawlayir
+        public TimeSpan timer => DateTime.Now - SharedData; //shardata elave olan kimi timer iwlemeye bawlayir
 
 
         public Status(string title, string content)
