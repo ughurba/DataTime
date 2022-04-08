@@ -6,7 +6,7 @@ namespace Data_Time
 {
     public class User
     {
-     
+
         public int Id { get; set; }
         private static int id { get; set; }
         public string Username { get; set; }
@@ -24,25 +24,22 @@ namespace Data_Time
         }
         public int GetStatusById(int? id)
         {
-            foreach (var item in Statuses)
+            if(id == null)
             {
-                if (id == null)
-                {
-                    throw new NullReferenceException("Id-nulldi");
-                }
-                else if (item.Id == id)
-                {
-
-                    Console.WriteLine();
-                    Console.WriteLine($"UserName:{Username}\nId{item.Id}\nTitle:{item.Title}\nContent:{item.Content}");
-                    Console.WriteLine("shared {0:hh\\:mm\\:ss} seconds ago", item.timer);
-                    return item.Id;
-                }
+                throw new NullReferenceException("Id-nulldi");
             }
-            return 0;
+            else
+            {
+                Status statuss = Statuses.Find(item => item.Id == id);
+                Console.WriteLine();
+                Console.WriteLine($"UserName:{Username}\nId{statuss.Id}\nTitle:{statuss.Title}\nContent:{statuss.Content}");
+                Console.WriteLine("shared {0:hh\\:mm\\:ss} seconds ago", statuss.timer);
+                return statuss.Id;
+            } 
         }
         public List<Status> GetAllStatuses()
         {
+
             if (Statuses == null)
             {
 
@@ -51,7 +48,6 @@ namespace Data_Time
             foreach (var item in Statuses)
             {
                 Console.WriteLine();
-
                 Console.WriteLine($"UserName:{Username}\nId{item.Id}\nTitle:{item.Title}\nContent:{item.Content}");
                 Console.WriteLine("shared {0:hh\\:mm\\:ss} seconds ago", item.timer);
             }
@@ -59,30 +55,34 @@ namespace Data_Time
         }
         public void FilterStatusByDate(int? id, DateTime date)
         {
-            if (id == Id)
+
+
+            if(id == Id)
             {
-                foreach (var item in Statuses)
+                
+                List<Status>statuscoy=new List<Status>();
+        
+                statuscoy=Statuses.FindAll(item => item.SharedData > date);
+                foreach (var item in statuscoy)
                 {
-
-                    if (item.SharedData > date)
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine($"Title:{item.Title}\nContent:{item.Content}\nData:{item.SharedData}");
-                        Console.WriteLine();
-
-                    }
-                    else
-                    {
-                        throw new NotFoundException("gonderilen tarixden sonra hec bir status paylawilmayib");
-                    }
+                    Console.WriteLine();
+                    Console.WriteLine($"Title:{item.Title}\nContent:{item.Content}\nData:{item.SharedData}");
+                    Console.WriteLine();
                 }
-            }
-            else if (id == null)
+               
+            }else if(id == null)
             {
-                throw new NullReferenceException("Id-null");
+                throw new NullReferenceException("Id-nulldir");
             }
+            else
+            {
+                throw new NotFoundException("gonderilen tarixden sonra hec bir status paylawilmayib");
+            }
+      
 
-            
+         
+
+
 
         }
     }
